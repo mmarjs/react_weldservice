@@ -1,0 +1,40 @@
+@import "../../css/general";
+
+.section-service-sider {
+  background: white;
+  .services-sider-wrap {
+    border: 1px solid $colorGrayBright;
+    h2 {
+      text-align: center;
+      background: $colorMainRegular;
+      padding: 10px;
+      color: white;
+    }
+    ul {
+      margin: 0;
+      li {
+        list-style: none;
+        border-top: 1px solid $colorGrayBright;
+        a {
+          padding: 10px;
+          display: block;
+          svg {
+            font-size: 80%;
+          }
+        }
+      }
+      li:first-child {
+        border-top: 0;
+      }
+    }
+  }
+  .call-now, .get-a-quote {
+    text-align: center;
+    background: $colorMainRegular;
+    padding: 10px;
+    display: block;
+    color: white;
+    margin-top: 5px;
+  }
+}
+

@@ -1,0 +1,98 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;800&display=swap');
+$Mukta :  'Mukta', sans-serif;
+
+$colorGgGray : #f9f9f9;
+$colorMainRegular : #3a4796;
+$colorMainBright : #4552a7;
+$colorMainDark : #2b3781;
+$colorGrayBright : #f5f5f5;
+$colorGrayBrightFooter : #7d838e;
+$colorGrayDark: #26292e;
+$colorGrayDarkLight: #2c3036;
+$colorGrayTxt: #7f7f7f;
+
+.blue-text { color: $colorMainRegular; }
+.bg-blue-regular { background-color: $colorMainRegular; }
+.bg-white { background-color: white; }
+a {
+  color: $colorMainBright;
+  &:hover {
+    color: $colorMainBright;
+  }
+}
+* {
+  transition-property: all;
+  transition-duration: .6s;
+  transition-timing-function: ease;
+}
+
+big {font-size: 150%}
+.p-large {
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.button-blue {
+  font-size: 1em;
+  min-width: 230px;
+  margin: .5em;
+  display: inline-block;
+  line-height: 1;
+  box-sizing: border-box;
+  a {
+    border-radius: 50px;
+    box-shadow: none;
+    background-color: $colorMainRegular;
+    color: #ffffff;
+    padding: 1.5em 2.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 1s ease;
+    line-height: 1;
+    align-content: flex-start;
+    text-decoration: none;
+    justify-content: center;
+    flex-flow: row nowrap;
+    display: flex;
+    &:hover {
+      box-shadow: 0 2px 5px rgba(0,0,0,.4);
+      background-color: $colorMainBright;
+    }
+  }
+}
+.svgIcon{
+  margin-right: 10px;
+}
+.button-blue-stroke {
+  @extend .button-blue;
+  a {
+    border: 2px solid white;
+  }
+}
+.button-white {
+  @extend .button-blue;
+  a {
+    background-color: #fbfbfb;
+    color: black;
+    &:hover {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.main-title {
+  margin: 50px 0;
+  text-align: center;
+  h1 {
+    border-bottom: 1px solid $colorGrayBright;
+    padding-bottom: 50px;
+  }
+}
+
+.flex {display: flex;}
+
+.MuiRadio-colorSecondary.Mui-checked,
+.MuiCheckbox-colorSecondary.Mui-checked{
+  color: $colorMainRegular !important;
+}

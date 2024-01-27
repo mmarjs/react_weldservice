@@ -1,0 +1,17 @@
+@import "../../css/general";
+
+.page-wrapper {
+  background: $colorGgGray;
+}
+.faq-body-wrap {
+  margin: 50px auto;
+  min-height: 600px;
+  .card {
+    border-radius: 0;
+  }
+  .card-header {
+    cursor: pointer;
+    background-color: $colorGrayDarkLight;
+    color: white;
+  }
+}

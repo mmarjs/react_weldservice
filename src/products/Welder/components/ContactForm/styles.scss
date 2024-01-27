@@ -1,0 +1,30 @@
+@import "../../css/general";
+
+.form-wrap {
+  form {
+    margin: 20px auto 0;
+    padding: 50px 25px 50px;
+  }
+  .MuiFormControl-fullWidth, .MuiFormControl-root {
+    margin-top: 50px;
+  }
+  .btn-submit-form {
+    background: $colorMainRegular;
+    border-radius: 50%;
+    color: white;
+    display: inline-flex;
+    padding: 10px;
+    position: absolute;
+    bottom: -35px;
+    right: 0;
+    border: 5px solid white;
+    cursor: pointer;
+    svg {
+      font-size: 50px;
+    }
+    &:hover {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+      background: $colorMainBright;
+    }
+  }
+}

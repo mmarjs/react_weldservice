@@ -1,0 +1,31 @@
+@import "../../css/general";
+
+.about-us-section-wrap {
+  padding: 25px 0;
+  .col {
+    padding: 5px;
+  }
+  .button-blue {
+    .MuiSvgIcon-root {
+      margin-right: 5px;
+      font-size: 1.5rem;
+      margin-top: -5px;
+      margin-left: -5px;
+    }
+  }
+  h3 {
+    margin-top: 15px;
+    color: $colorGrayDarkLight;
+  }
+  ul {
+    padding-left: 18px;
+  }
+  span {
+    color: $colorMainRegular;
+  }
+  @media only screen and (max-width: 480px) {
+    .button-blue .MuiSvgIcon-root {
+      font-size: 2.5rem;
+    }
+  }
+}

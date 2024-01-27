@@ -1,0 +1,16 @@
+@import "../../css/general";
+
+.blue-quote-stripe {
+  background: $colorMainRegular;
+  min-height: 200px;
+  display: grid;
+  align-content: center;
+  p {
+    font-size: 1.75rem;
+    color: white;
+    padding-top: 15px;
+  }
+  .button-white {
+    margin-bottom: 15px;
+  }
+}

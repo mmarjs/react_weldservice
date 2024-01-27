@@ -1,0 +1,100 @@
+@import "../../css/general";
+
+footer {
+  background: $colorGrayDark;
+  min-height: 200px;
+  padding: 50px;
+  .container {
+    max-width: 900px;
+  }
+  h3 {
+    color: white;
+    font-weight: 200;
+    font-size: 1.2rem;
+    &:after {
+      display: block;
+      height: 2px;
+      width: 40px;
+      background: white;
+      content: " ";
+      margin-top: 10px;
+    }
+    svg {
+      font-size: 1.3rem !important;
+    }
+  }
+  ul.contact-info {
+    padding-left: 0;
+    li {
+      list-style: none;
+      color: white;
+      font-size: 1rem;
+      line-height: 2.3em;
+      svg {
+        color: $colorMainBright;
+      }
+      a {
+        color: white;
+        &:hover {
+          color: $colorMainBright;
+        }
+      }
+    }
+    svg {
+      font-size: 1rem;
+    }
+  }
+  ul.social-info {
+    padding-left: 0;
+    li {
+      display: inline-block;
+      list-style: none;
+      margin: 3px;
+      a {
+        color: white;
+        &:hover {
+          color: $colorMainBright;
+        }
+      }
+    }
+  }
+  ul.services-info,
+  ul.hours-info,
+  ul.pages-info {
+    @extend .contact-info;
+    a {
+      padding: 0;
+      color: white !important;
+      font-size: 1rem;
+      text-transform: initial;
+    }
+  }
+  ul.hours-info,
+  ul.pages-info {
+    li {
+      line-height: 1.5em;
+      a {
+        color: white;
+      }
+    }
+  }
+  ul.services-info {
+    li {
+      line-height: 1.8em;
+    }
+  }
+  .copyright-info {
+    font-size: 0.7rem;
+    text-align: center;
+    p {
+      color: white;
+    }
+  }
+}
+
+
+@media only screen and (max-width:575px){
+  footer{
+    padding: 30px 10px;
+  }
+}

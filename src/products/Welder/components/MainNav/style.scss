@@ -1,0 +1,88 @@
+@import '../../css/general';
+
+
+.nav-link {
+  font-family: $Mukta;
+  font-weight: 400;
+  color: #333 !important;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 12px 10px;
+}
+.active.nav-link {
+  border-bottom: 2px solid $colorMainRegular;
+}
+.dropdown-toggle::after {
+  color: $colorMainRegular
+}
+.bg-dark {
+  background-color: white !important;
+}
+.navbar-light .navbar-toggler {
+  border: 0;
+}
+.navbar-toggler {
+  padding: 0;
+}
+.nav-container .MuiSvgIcon-root {
+  font-size: 2rem !important;
+  color: $colorMainDark;
+  outline: none;
+}
+.navbar-brand {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  .logo-top {
+    margin-top: -8px;
+    float: left;
+    width: 40px;
+  }
+  p {
+    color: $colorMainRegular;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-top: 2px;
+  }
+}
+.dropdown-menu {
+  transition: all ease 500ms;
+  border: 0;
+  border-top: 4px solid $colorMainRegular;
+  border-radius: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 0;
+}
+.dropdown-item {
+  @extend .nav-link;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+.dropdown-item:hover {
+  background: #fff;
+  box-shadow: inset 7px 0 0 -2px $colorMainRegular;
+  color: $colorMainRegular;
+}
+.dropdown-item:active {
+  background: #fff;
+  color: $colorMainRegular;
+}
+.dropdown-item.active, .dropdown-item:active {
+  background: white;
+  box-shadow: inset 7px 0 0 -2px $colorMainRegular;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    border-radius: 0 0 3px 3px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .nav-container {
+    max-width: 100%;
+    padding: 0;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.25);
+  }
+}

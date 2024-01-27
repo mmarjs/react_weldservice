@@ -1,0 +1,84 @@
+@import "../../css/general";
+
+.boxes-section {
+  display: grid;
+  //grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+  column-gap: 1em;
+  row-gap: 1em;
+  margin-top: 150px;
+  .box-wrapper {
+    min-height: 300px;
+    display: grid;
+    background: #fff;
+    border: 1px solid #ccc;
+    .box-thumb {
+      max-height: 200px;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    .box-icon {
+      height: 60px;
+      width: 60px;
+      margin-top: -45px;
+      margin-left: 25px;
+      background: $colorMainRegular;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: color 200ms;
+      cursor: pointer;
+      svg {
+        font-size: 35px;
+      }
+      &:hover {
+        transition: color 200ms;
+        background: white;
+        color: $colorMainRegular;
+      }
+    }
+    .box-content {
+      padding: 25px;
+      h2 {
+        font-size: 1em;
+        color: #252525;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 0.9rem;
+        color: $colorMainRegular;
+        font-weight: 600;
+      }
+
+      .box-btn {
+        a {
+          font-size: 0.7rem;
+          color: $colorMainRegular;
+          font-weight: 400;
+          text-transform: uppercase;
+
+          &:hover {
+            text-decoration: none;
+            border-bottom: 1px dashed $colorMainRegular;
+            border-left: 1px dashed $colorMainRegular;
+            padding: 5px 10px;
+          }
+          &:after {
+            font-family: 'FontAwesome', sans-serif;
+            font-weight: 300;
+            content: "\f105";
+            margin-left: 10px;
+            color: $colorMainRegular;
+            font-size: 12px;
+            vertical-align: middle;
+            transition: color 200ms;
+          }
+        }
+      }
+    }
+  }
+}
